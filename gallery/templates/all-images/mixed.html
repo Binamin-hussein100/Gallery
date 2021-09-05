@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+              <!-- form -->
+              
+            </div>
+        </div>
+    </div>
+    <div id="web" class="container-fluid">
+        <div id="form" class="row">
+            <div class="col-md-12">
+                <div>
+                    <h3 id="intro">
+                        Gallery is the best place to visit for the old memories
+                    </h3>
+                </div>
+                <form action="{% url 'search' %}" method="GET">
+                    {%  csrf_token %}
+                    <input id="q" class="form-control mr-sm-2" placeholder="Search" type="text">
+                    <button class="btn btn-outline-light" type="submit">Search <i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div id="diplay" class="col-md-12">
+               
+              <!-- {% for i in binamin %}
+              {{i.pic_type}}
+              {% endfor %} -->
+              <hr>
+              {% for items in store %}
+              <a href="/"><img id="image" class="img-thumbnail"  src="{{ items.image.url }}" alt=""></a>
+              {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+       <h3 id="footer"><i class="fab fa-old-republic"></i></h3>
+    </div>
+{% endblock %}
+
+<!-- {{ store.name}} -->

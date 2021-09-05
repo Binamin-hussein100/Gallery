@@ -1,0 +1,60 @@
+#web{
+    background-image:linear-gradient(rgba(117, 103, 103, 0.233) , rgba(92, 98, 110, 0), rgb(98, 110, 98));;
+    justify-content: space-between;
+}
+
+#intro{
+    margin-left: 25%;
+    color: white;
+    margin-right: auto;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 4%;
+    
+}
+
+#logo{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#image{
+    width: 16%;
+    height: auto;
+    margin: 2px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#footer{
+    margin-left: 47%;
+}
+
+#q{
+    width: 40%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+form{
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.btn{
+
+    width: 10%;
+}
+
+#form{
+    height: 20vh;
+    height: 38vh;
+    background-image: url('../images/departure-platform-371218_1920.jpg');
+    
+}
+
+#display{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}

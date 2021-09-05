@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas deserunt aspernatur amet aliquid dolorum beatae tempore quisquam, possimus ratione ducimus quos quam, assumenda sint eveniet veniam? Voluptates recusandae atque quisquam!</p>
+<div class="container">
+    {% for i in display %}
+    <!-- <img class="img-thumbnail" src="{{ i.image.url }}" alt=""> -->
+     <h6>{{i.name }}</h6>
+
+    {% endfor %}
+    
+</div>
+{% endblock %}
