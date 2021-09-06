@@ -100,9 +100,8 @@ form{
 
 #searched{
     background-image:linear-gradient(rgba(117, 103, 103, 0.233) , rgba(92, 98, 110, 0), rgb(98, 110, 98));;
-    justify-content: space-between;
     height: 81vh;
-    padding: 3%;
+    display: flex;
 }
 
 #button{
@@ -118,4 +117,6 @@ form{
     width: auto;
 }
 
-
+#image3{
+    
+}
