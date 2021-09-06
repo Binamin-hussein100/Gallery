@@ -20,10 +20,10 @@ class Image(models.Model):
         return image_id
     
     def save_image(self):
-        return Image.objects.save()
+        return self.save()
     
     def delete_image(self):
-        return Image.objects.delete()
+        return self.delete()
     
     @classmethod
     def all_images(cls):
@@ -45,7 +45,12 @@ class Category(models.Model):
     def all_categories(cls):
         cat = cls.objects.all()
         return cat
-    
+    def save_category(self):
+        self.save()
+
+    def delete_category(self):
+        self.delete()
+        
     def __str__(self):
         return self.pic_type    
 
@@ -53,8 +58,8 @@ class Location(models.Model):
     location = models.CharField(max_length=30)
     
     @classmethod
-    def filter_by_location(cls):
-        return cls.objects.filter('location')
+    def filter_by_location(cls,search_term):
+        return cls.objects.filter(location__name__contains = search_term)
     
     def __str__(self):
         return self.location    
