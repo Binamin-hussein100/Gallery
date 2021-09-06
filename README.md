@@ -44,7 +44,7 @@ To activate the virtual environment we just created, run
 ##### 3. Create a django and create django projects
  Install django
  ```bash
- pip install django==1.11
+ pip install django
   ```
   Create django project
   ```bash
@@ -108,9 +108,9 @@ To run the application on your development machine,
 
 * View different photos that interest me.
 * Click on a single photo to expand it and also view the details of the photo. The photo details must appear on a modal within      the same route as the main page.
-* Search for different categories of photos. (ie. Travel, Food)
+* Search for different categories of photos. (ie. Sports, Food)
 * View photos based on the location they were taken.
-* Copy a link to the photo to share with my friends.
+
 
 
 ## Bugs
