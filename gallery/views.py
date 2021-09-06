@@ -6,8 +6,8 @@ from django.db.models import Q
 # Create your views here.
 def images_all(request):
     store = Image.all_images()
-    binamin = Category.all_categories()
-    return render(request,'all-images/mixed.html', {"store":store},)
+    binamin = Category.objects.all()
+    return render(request,'all-images/mixed.html', {"store":store,"binamin":binamin})
 
 def details(request,pk):
     eachImage = Image.objects.get(id=pk)
