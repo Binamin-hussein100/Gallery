@@ -30,10 +30,10 @@ class Image(models.Model):
         images = cls.objects.all()
         return images
     
-    @classmethod
-    def search_by_title(cls,search_term):
-        picha = cls.objects.filter(name__icontains=search_term)
-        return picha
+    # @classmethod
+    # def search_by_title(cls,search_term):
+    #     picha = cls.objects.filter(name__icontains=search_term)
+    #     return picha
     
     def __str__(self):
         return f'{self.name}.{self.description}'
