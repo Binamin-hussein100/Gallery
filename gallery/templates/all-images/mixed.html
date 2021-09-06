@@ -22,14 +22,16 @@
                     <input id="q" name="q" class="form-control mr-sm-2" placeholder="Search by name,location or category. Eg: mukuru" type="text">
                     <button class="btn btn-outline-light" type="submit">Search <i class="fas fa-search"></i></button>
                 </form>
+                <div id="button">
+                    {% for x in binamin %}
+                    <a href="/"><button id="outline" class="btn btn-outline-light">{{x.pic_type}}</button></a>
+                     
+                    {% endfor %}
+                </div>
             </div>
         </div>
         <div class="row">
             <div id="diplay" class="col-md-12">
-               
-              <!-- {% for i in binamin %}
-              {{i.pic_type}}
-              {% endfor %} -->
               <hr>
               {% for items in store %}
               <a href="{% url 'picture' items.pk %}"><img id="image" class="img-thumbnail"  src="{{ items.image.url }}" alt=""></a>
