@@ -5,7 +5,7 @@
 {% block content %}
 <div id="searched" class="container-fluid">
     {% for i in display %}
-    <img id="image" class="img-thumbnail" src="{{ i.image.url }}" alt="">
+    <a href="/"><img id="image" class="img-thumbnail" src="{{ i.image.url }}" alt=""></a>
     
 
     {% endfor %}
