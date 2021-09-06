@@ -84,9 +84,10 @@ form{
 }
 
 #form{
-    height: 20vh;
-    height: 38vh;
+    height: auto;
+    padding: 3%;
     background-image: url('../images/departure-platform-371218_1920.jpg');
+    background-color: rgb(165, 155, 155);
     
 }
 
@@ -94,6 +95,7 @@ form{
     display: flex;
     flex-wrap: wrap;
     padding: 2%;
+    width: 80%;
 }
 
 #searched{
@@ -102,3 +104,18 @@ form{
     height: 81vh;
     padding: 3%;
 }
+
+#button{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1rem auto 0 auto;
+    
+}
+
+#outline{
+    height: auto;
+    width: auto;
+}
+
+
