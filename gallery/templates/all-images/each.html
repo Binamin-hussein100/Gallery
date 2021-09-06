@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="wed" class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+               <img class="img-thumbnail" id="single_image" src="{{eachImage.image.url}}" alt="">
+            </div>
+            <div id="informatics" class="col-md-3">
+                
+                <div class="inf">
+                    <H2 id="rel_info"><strong>IMAGE INFO</strong></H2>
+                    <h4 class="decs">NAME:</h4>
+                    <H6 id="sup-name"> {{eachImage.name}}</H6>
+                    <hr>
+                    <h4 class="decs" >DESCRIPTION:</h4>
+                    <H6 > {{eachImage.description}}</H6>
+                    <hr>
+                    <h4 class="desc">LOCATION:</h4>
+                    <H6 > {{eachImage.location}}</H6>
+                    <hr>
+                    <h4 class="desc">CATEGORY:</h4>
+                    <H6 > {{eachImage.category}}</H6>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
