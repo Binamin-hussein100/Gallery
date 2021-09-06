@@ -19,6 +19,12 @@ class Image(models.Model):
         image_id = self.pk
         return image_id
     
+    def save_image(self):
+        return Image.objects.save()
+    
+    def delete_image(self):
+        return Image.objects.delete()
+    
     @classmethod
     def all_images(cls):
         images = cls.objects.all()
