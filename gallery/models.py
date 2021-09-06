@@ -12,7 +12,7 @@ class Image(models.Model):
     # post_date = models.DateTimeField(auto_now_add=True,default=' ')
     
     class Meta:
-        ordering = ['-name']
+        # ordering = ['pk']
         verbose_name_plural = 'Images'
     
     def get_image_id(self):
